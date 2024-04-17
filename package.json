@@ -1,15 +1,20 @@
 {
   "name": "ts-cli",
   "version": "0.0.1",
+  "bin": {
+    "ts-cli": "./dist/index.js"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "link-cli": "npm rm -g ts-cli && npm link ",
+    "dev": "tsc -w"
   },
   "keywords": [],
   "author": "Amir Kangarloo",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "typescript": "^5.4.5"
   }
 }
